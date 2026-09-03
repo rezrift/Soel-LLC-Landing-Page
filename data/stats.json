@@ -1,0 +1,17 @@
+{
+  "generatedAt": null,
+  "games": {
+    "midnight-hours": {
+      "playing": null,
+      "visits": null,
+      "peakPlaying": null,
+      "peakTrackingStartedAt": null
+    },
+    "asmr-dominoes": {
+      "playing": null,
+      "visits": null,
+      "peakPlaying": null,
+      "peakTrackingStartedAt": null
+    }
+  }
+}

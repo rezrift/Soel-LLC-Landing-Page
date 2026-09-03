@@ -1,0 +1,46 @@
+name: Update live stats
+
+on:
+  schedule:
+    # Every 15 minutes. GitHub Actions schedules are best-effort and can
+    # slip during high load, and GitHub auto-disables a schedule after
+    # ~60 days with no commits to the repo — see README "Keeping the
+    # live stats alive" for what to do if numbers look stale.
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {} # lets you trigger a refresh manually from the Actions tab
+  push:
+    branches: [main]
+    paths:
+      - "data/games.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-stats
+  cancel-in-progress: false
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch live Roblox stats
+        run: node scripts/fetch-stats.mjs
+
+      - name: Commit updated stats if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/stats.json; then
+            echo "No stat changes, nothing to commit."
+          else
+            git add data/stats.json
+            git commit -m "chore: update live stats [skip ci]"
+            git push
+          fi

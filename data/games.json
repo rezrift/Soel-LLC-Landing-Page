@@ -1,0 +1,32 @@
+{
+  "_comment": "Static metadata for each game. placeId must be the numeric Roblox place ID from the game's roblox.com/games/<id>/... URL. 'image' is optional — omit it to render the card without a media header.",
+  "games": [
+    {
+      "slug": "midnight-hours",
+      "name": "Midnight Hours",
+      "status": "live",
+      "blurb": "A survival horror experience where something is hunting you after 1am. Board up windows, manage your phone, and don't get caught.",
+      "placeId": 10005865562,
+      "robloxUrl": "https://www.roblox.com/games/10005865562/Midnight-Hours",
+      "image": "assets/games/midnight-hours.png"
+    },
+    {
+      "slug": "asmr-dominoes",
+      "name": "ASMR Dominoes",
+      "status": "live",
+      "blurb": "Drag, build, and topple oddly satisfying domino chains. Click-and-drag procedural placement makes huge builds effortless.",
+      "placeId": 98004862449180,
+      "robloxUrl": "https://www.roblox.com/games/98004862449180/ASMR-Dominoes",
+      "image": "assets/games/asmr-dominoes.png"
+    },
+    {
+      "slug": "shoes",
+      "name": "SHOES",
+      "status": "in-development",
+      "blurb": "Our next title, currently in development. Details coming soon.",
+      "placeId": null,
+      "robloxUrl": null,
+      "image": null
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soel</title>
+  <meta name="description" content="Soel is an independent game studio. Live player counts and games below." />
+
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap">
+      <a class="nav-logo" href="#top">
+        <img src="assets/logo.png" alt="" />
+        SOEL
+      </a>
+      <div class="nav-links">
+        <a href="#games">Games</a>
+        <a href="#connect">Connect</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-mark">
+        <img src="assets/logo.png" alt="Soel" />
+      </div>
+      <h1>Soel</h1>
+      <p class="tagline">An independent game studio building worlds people come back to.</p>
+
+      <div class="stat-bar" id="stat-bar" aria-live="polite">
+        <div class="stat">
+          <div class="value"><span id="stat-games">—</span></div>
+          <div class="label">Games launched</div>
+        </div>
+        <div class="stat">
+          <div class="value"><span class="live-dot"></span><span id="stat-ccu">—</span></div>
+          <div class="label">Live CCU</div>
+        </div>
+        <div class="stat">
+          <div class="value"><span id="stat-visits">—</span></div>
+          <div class="label">Lifetime visits</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="games wrap" id="games">
+      <div class="section-heading">
+        <h2>Games</h2>
+        <p id="games-updated"></p>
+      </div>
+      <div class="game-grid" id="game-grid">
+        <!-- Cards are rendered by js/main.js from data/games.json + data/stats.json -->
+      </div>
+    </section>
+  </main>
+
+  <footer id="connect">
+    <div class="wrap footer-row">
+      <div class="social-links">
+        <a href="https://www.roblox.com/communities/504512158/Soel-LLC#!/about" target="_blank" rel="noopener">Roblox</a>
+        <a href="https://x.com/soeldev" target="_blank" rel="noopener">X</a>
+        <a href="https://www.tiktok.com/@soeldev" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.twitch.tv/soeldev" target="_blank" rel="noopener">Twitch</a>
+        <a href="https://www.youtube.com/@devsoel" target="_blank" rel="noopener">YouTube</a>
+        <a href="mailto:hello@soel.gg">Email</a>
+      </div>
+      <div class="copyright">&copy; <span id="year"></span> Soel LLC</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
