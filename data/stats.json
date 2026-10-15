@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-14T22:37:12.891Z",
+  "generatedAt": "2026-10-15T00:51:55.183Z",
   "games": {
     "midnight-hours": {
-      "playing": 20,
-      "visits": 30806981,
+      "playing": 17,
+      "visits": 30807234,
       "peakPlaying": 65,
       "peakTrackingStartedAt": "2026-09-03T14:56:41.589Z"
     },
