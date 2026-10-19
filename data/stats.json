@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-19T06:51:03.492Z",
+  "generatedAt": "2026-10-19T14:14:31.995Z",
   "games": {
     "midnight-hours": {
-      "playing": 6,
-      "visits": 30823976,
+      "playing": 16,
+      "visits": 30824625,
       "peakPlaying": 65,
       "peakTrackingStartedAt": "2026-09-03T14:56:41.589Z"
     },
     "asmr-dominoes": {
       "playing": 0,
-      "visits": 5945,
+      "visits": 5956,
       "peakPlaying": 4,
       "peakTrackingStartedAt": "2026-09-03T14:56:41.589Z"
     }
